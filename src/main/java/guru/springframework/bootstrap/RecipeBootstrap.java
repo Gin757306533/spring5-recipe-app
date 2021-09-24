@@ -112,14 +112,14 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         guacNotes.setRecipe(guacRecipe);
         guacRecipe.setNotes(guacNotes);
 
-        guacRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
-        guacRecipe.getIngredients().add(new Ingredient("Kosher salt", new BigDecimal(5), teaspoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("fresh lime juice or lemon juice", new BigDecimal(2), tableSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("minced red onion or thinly sliced green onion", new BigDecimal(2), tableSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("serrano chiles, stems and seeds remove, minced", new BigDecimal(2), eachUom));
-        guacRecipe.getIngredients().add(new Ingredient("Cilantro", new BigDecimal(2), tableSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("freshly grated black peper", new BigDecimal(2), dashUom));
-        guacRecipe.getIngredients().add(new Ingredient("ripe tomato, seeds and pulp removed, chopped", new BigDecimal(5), eachUom));
+        guacRecipe.addIngredient(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
+        guacRecipe.addIngredient(new Ingredient("Kosher salt", new BigDecimal(5), teaspoonUom));
+        guacRecipe.addIngredient(new Ingredient("fresh lime juice or lemon juice", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("minced red onion or thinly sliced green onion", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("serrano chiles, stems and seeds remove, minced", new BigDecimal(2), eachUom));
+        guacRecipe.addIngredient(new Ingredient("Cilantro", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("freshly grated black peper", new BigDecimal(2), dashUom));
+        guacRecipe.addIngredient(new Ingredient("ripe tomato, seeds and pulp removed, chopped", new BigDecimal(5), eachUom));
 
         guacRecipe.getCategories().add(americanCategory);
         guacRecipe.getCategories().add(mexicanCategory);
@@ -140,17 +140,17 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tacoNotes.setRecipe(tacosRecipe);
         tacosRecipe.setNotes(tacoNotes);
 
-        tacosRecipe.getIngredients().add(new Ingredient("Ancho Chili Powder", new BigDecimal(2), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("Dired Oreano", new BigDecimal(5), teaspoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("Dried Cumin", new BigDecimal(2), tableSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("Sugar", new BigDecimal(2), tableSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("Salt", new BigDecimal(2), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("Clove of Garlic, Choppedr", new BigDecimal(2), tableSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("finely grated orange zestr", new BigDecimal(2), dashUom));
-        tacosRecipe.getIngredients().add(new Ingredient("ingrsfsd", new BigDecimal(5), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("ingrsfsd", new BigDecimal(5), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("sf", new BigDecimal(5), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("ingrsfsd", new BigDecimal(5), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("Ancho Chili Powder", new BigDecimal(2), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("Dired Oreano", new BigDecimal(5), teaspoonUom));
+        tacosRecipe.addIngredient(new Ingredient("Dried Cumin", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("Sugar", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("Salt", new BigDecimal(2), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("Clove of Garlic, Choppedr", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("finely grated orange zestr", new BigDecimal(2), dashUom));
+        tacosRecipe.addIngredient(new Ingredient("ingrsfsd", new BigDecimal(5), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("ingrsfsd", new BigDecimal(5), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("sf", new BigDecimal(5), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("ingrsfsd", new BigDecimal(5), eachUom));
 
         tacosRecipe.getCategories().add(americanCategory);
         tacosRecipe.getCategories().add(mexicanCategory);
